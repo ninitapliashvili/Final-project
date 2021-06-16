@@ -242,25 +242,191 @@
 }
 
 .section6{
-    padding: 110px 42px 60px 51px;
+    padding: 0px 42px 0px 51px;
     width: 100%;
     height: 1411px;
+}
+.social-icons{
+    width: 100%;
+    height: 224px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.soc-item{
+    margin-right: 48px;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+.insta::before{
+    content: url(https://img.icons8.com/metro/24/000000/instagram-new.png);
+    margin-right: 23px;
+}
+.twit::before{
+    content: url(https://img.icons8.com/android/24/000000/twitter.png);
+    margin-right: 23px;
+}
+.fb::before{
+    content: url(https://img.icons8.com/material-sharp/24/000000/facebook-f.png);
+    margin-right: 23px;
+}
+.fsq::before{
+    content: url(https://img.icons8.com/windows/24/000000/foursquare.png);
+    margin-right: 23px;
 }
 .elements-wrapper-section6{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
-    height: 100%;
+    height: 1170px;
 }
-.element1-section6{
-    width: 880px;
+.elements-section6{
+    width: 48%;
     height: 555px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-image: url(../images/section6/1.svg);
+    align-items: flex-start;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+}
+.element1-section6{
+    background-image: url(../images/section6/1.svg);
+    height: 555px;
+}
+.element1-section6-title{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 24px;
+    margin-left: 38px;
+    margin-bottom: 16px;
+}
+.element1-section6-p{
+    font-size: 40px;
+}
+.button-section6{
+    width: 200px;
+    height: 60px;
+    background-color: #32353C;
+    color: white;
+    margin-left: 38px; 
+    border-color: #202124;
+    border-radius: 5px;
+}
+.button-section6:hover{
+    background-color: #6D717B;
+}
+.element2-section6{
+    background-image: url(../images/section6/2.svg);
+}
+.element3-section6{
+    background-image: url(../images/section6/3.png);
+}
+.last-elements{
+    width: 22%; 
+}
+.element4-section6{
+    background-color: #B79B6C;
+}
+.element5-section6{
+    background-image: url(../images/section6/5.png);
+}
+.service-info-wrapper{
+    display: flex;
+    width: 100%;
+    margin-bottom: 70px;
+}
+.service-item{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.service-icon{
+    margin-bottom: 30px;
+}
+.service-item-title{
+    font-family: proxima-nova, sans-serif;
+    font-size: 28px;
+    color: #32353C;
+    margin-bottom: 20px;
+}
+.service-item-info{
+    font-family: proxima-nova, sans-serif;
+    color: #32353C;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.footer-wraper{
+    width: 100%;
+    height: 763px;
+    background-color: #32353C;
+}
+.footer1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer1-item{
+    width: 30%;
+    height: 640px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.footer-item-title{
+    font-family: proxima-nova, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 64px;
+}
+.Contact-info{
+    width: 300px;
+    font-family: proxima-nova, sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    color: #6F6F6F;
+    margin-bottom: 23px;
+}
+.address{
+    margin-bottom: 63px;
+}
+.cards{
+    width: 230px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer2{
+    margin: 45px 23px 42px 23px;
+}
+.Divider{
+    width: 100%;
+    height: 1px;
+    background-color: #6F6F6F;
+}
+.footer2-text{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer2-par{
+    font-family: proxima-nova, sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    color: #6F6F6F;
 }
