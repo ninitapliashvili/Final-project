@@ -28,3 +28,10 @@ $(function(){
     ]
   });    
 });
+
+$("#burger-menu").on("click", function(){
+    $("#menu").toggleClass("open-menu");
+    $("#nav-id").toggleClass("open-nav-id");
+	$("#header-id").toggleClass("open-header-id");
+	$("#logo").toggleClass("open-logo");
+  })

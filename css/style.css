@@ -1,48 +1,55 @@
-
 /* header */
-.header-wrapper{
+.header-wraper{
     width: 100%;
     height: 100px;
     display: flex;
     align-items: center;
-    justify-content: center; 
-    z-index: 100;
+    justify-content: space-around; 
     position: fixed;
+    z-index: 10;
+    background-color: rgb(224, 203, 132);
 }
-.header-background{
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    opacity: 43%;
-    position: relative;
+.logo{
+    margin-left: 30px;
 }
+
 .navigation{
-    width: 60%;
-    opacity: 100%;
-    position: absolute;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.burger-icon{
+    margin: 20px;
+    display: none;
 }
 .nav-ul{
-    width: 100%;
+    padding-left: 40px;
+    padding-right: 20px;
+    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
     opacity: 100%;
 }
 .nav-li{
     font-family: 'Raleway', sans-serif;
+    font-weight: bold;
     font-size: 22;
     color: #32353C;
+    margin-bottom: 20px;
 }
 .active{
     color: #B79B6C;
+    font-weight: bold;
 }
 
 /* first section */
 .FirstSectionWrapper{
     width: 100%;
-    height: 1080px;
+    /* height: 1080px; */
     display: flex;
     flex-direction: row;
 }
@@ -90,7 +97,7 @@
 }
 .shipping-wrapper{
     width: 100%;
-    height: 140px;
+    /* height: 140px; */
     display: flex;
     align-items: center;
 }
@@ -129,6 +136,11 @@
     font-family: 'Raleway', sans-serif;
     color: #32353C;
     font-size: 30px;
+}
+
+/* section4 */
+.section4-wrapper{
+    width: 100%;
 }
 .section4{
     margin-top: 129px;
@@ -195,7 +207,7 @@
 } 
 .section5{
     width: 100%;
-    height: 292px;
+    /* height: 292px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -244,11 +256,10 @@
 .section6{
     padding: 0px 42px 0px 51px;
     width: 100%;
-    height: 1411px;
 }
 .social-icons{
     width: 100%;
-    height: 224px;
+    height: 200px; 
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -279,72 +290,88 @@
     content: url(https://img.icons8.com/windows/24/000000/foursquare.png);
     margin-right: 23px;
 }
-.elements-wrapper-section6{
+/* section6 elements */
+
+.items-wrapper{
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
-    height: 1170px;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.elements-section6{
-    width: 48%;
+.items-height{
     height: 555px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-size: cover;
+}
+.large-items{
+    width: 800px;
+}
+.large1{
+    background-image: url(../images/section6/2.svg);
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
 }
-.element1-section6{
-    background-image: url(../images/section6/1.svg);
-    height: 555px;
-}
-.element1-section6-title{
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    font-size: 24px;
-    margin-left: 38px;
-    margin-bottom: 16px;
-}
-.element1-section6-p{
-    font-size: 40px;
-}
-.button-section6{
-    width: 200px;
-    height: 60px;
-    background-color: #32353C;
-    color: white;
-    margin-left: 38px; 
-    border-color: #202124;
-    border-radius: 5px;
-}
-.button-section6:hover{
-    background-color: #6D717B;
-}
-.element2-section6{
-    background-image: url(../images/section6/2.svg);
-}
-.element3-section6{
+.large2{
     background-image: url(../images/section6/3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-.last-elements{
-    width: 22%; 
+.thin-items{
+ width: 480px;
 }
-.element4-section6{
+.thin1{
+    background-image: url(../images/section6/5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.thin2{
     background-color: #B79B6C;
 }
-.element5-section6{
-    background-image: url(../images/section6/5.png);
+.items-information{
+    width: 280px;
+    margin-left: 40px;
 }
+.items-title{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 25px;
+    color: white;   
+}
+.items-txt{
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 46px;
+    color: white; 
+}
+.button-section6{
+    width: 170px;
+    height: 50px;
+    background-color: #32353C;
+    border-radius: 10px;
+    color: white;
+    font-size: 26px;
+}
+.button-section6:hover{
+    background-color: #545557;
+}
+/* service */
 .service-info-wrapper{
     display: flex;
     width: 100%;
-    margin-bottom: 70px;
 }
 .service-item{
+    height: 340px;
     width: 25%;
     display: flex;
     flex-direction: column;
@@ -357,14 +384,14 @@
 }
 .service-item-title{
     font-family: proxima-nova, sans-serif;
-    font-size: 28px;
+    font-size: 24px;
     color: #32353C;
     margin-bottom: 20px;
 }
 .service-item-info{
     font-family: proxima-nova, sans-serif;
     color: #32353C;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 .footer-wraper{
@@ -388,7 +415,7 @@
 }
 .footer-item-title{
     font-family: proxima-nova, sans-serif;
-    font-size: 32px;
+    font-size: 22px;
     font-weight: bold;
     color: white;
     margin-bottom: 64px;
@@ -396,7 +423,7 @@
 .Contact-info{
     width: 300px;
     font-family: proxima-nova, sans-serif;
-    font-size: 22px;
+    font-size: 16px;
     font-weight: normal;
     color: #6F6F6F;
     margin-bottom: 23px;
@@ -426,7 +453,7 @@
 }
 .footer2-par{
     font-family: proxima-nova, sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: normal;
     color: #6F6F6F;
 }
