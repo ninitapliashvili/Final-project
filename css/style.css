@@ -1,4 +1,7 @@
 /* header */
+body{
+    background-color: rgb(230, 214, 163);
+}
 .header-wraper{
     width: 100%;
     height: 100px;
@@ -8,6 +11,7 @@
     position: fixed;
     z-index: 10;
     background-color: rgb(224, 203, 132);
+    margin-bottom: 150px;
 }
 .logo{
     margin-left: 30px;
@@ -49,27 +53,28 @@
 /* first section */
 .FirstSectionWrapper{
     width: 100%;
-    /* height: 1080px; */
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 .section1block{
-    width: 50%;
-   
+    width: 48%; 
+    height: 800px;  
 }
 .bag{
-    margin-top: 150px;
+    background-image: url(../images/section1-bag.png);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .BAG-PICTexts{
     height: 152px;
     width: 235px;
-    position: absolute;
-    left: 100px;
+    margin: 0 auto;
 }
 .Release{
     color: #B79B6C;
@@ -110,6 +115,7 @@
     content: '✈';
     margin-left: 40px;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 .section3-wrapper{
     width: 100%;
@@ -236,10 +242,12 @@
 
 .slider {
     display: flex;
-    width: 98%;
-    justify-content: center;
+    width: 95%;
     background-color:  #ffd480;
     margin-top: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .slider .slider_item {
     width: 300px;
@@ -310,7 +318,7 @@
     align-items: flex-start;
 }
 .large-items{
-    width: 800px;
+    width: 68%;
 }
 .large1{
     background-image: url(../images/section6/2.svg);
@@ -325,7 +333,7 @@
     background-position: center;
 }
 .thin-items{
- width: 480px;
+ width: 30%;
 }
 .thin1{
     background-image: url(../images/section6/5.png);
@@ -396,22 +404,25 @@
 }
 .footer-wraper{
     width: 100%;
-    height: 763px;
+    height: 500px;
     background-color: #32353C;
+    position: relative;
 }
 .footer1{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 .footer1-item{
-    width: 30%;
-    height: 640px;
-    padding-left: 20px;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-bottom: 40px;
+    padding-left: 20px;
 }
 .footer-item-title{
     font-family: proxima-nova, sans-serif;
@@ -421,7 +432,7 @@
     margin-bottom: 64px;
 }
 .Contact-info{
-    width: 300px;
+    /* width: 300px; */
     font-family: proxima-nova, sans-serif;
     font-size: 16px;
     font-weight: normal;
@@ -438,7 +449,10 @@
     justify-content: space-between;
 }
 .footer2{
-    margin: 45px 23px 42px 23px;
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    right: 40px;
 }
 .Divider{
     width: 100%;

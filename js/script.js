@@ -11,13 +11,13 @@ $(function(){
 	dots:true,
 	// responsiv-ის კოდი
 	responsive: [
-	    {
-	      breakpoint: 768,
-	      settings: {
-	        slidesToShow: 2,
-	        slidesToScroll: 1
-	      }
-	    },
+		{
+			breakpoint: 1082,
+			settings: {
+			  slidesToShow: 2,
+			  slidesToScroll: 1
+			}
+		  },
 	    {
 	      breakpoint: 480,
 	      settings: {
