@@ -130,6 +130,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5px;
 }
 .p1{
     margin-top: 10px;
