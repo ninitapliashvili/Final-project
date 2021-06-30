@@ -34,4 +34,5 @@ $("#burger-menu").on("click", function(){
     $("#nav-id").toggleClass("open-nav-id");
 	$("#header-id").toggleClass("open-header-id");
 	$("#logo").toggleClass("open-logo");
+	$("#signin").toggleClass("open-signin");
   })
